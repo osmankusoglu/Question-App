@@ -48,7 +48,7 @@ function Quiz({ questions, onFinish }) {
     // Kullanıcının seçtiği seçeneğin doğru olup olmadığını kontrol eder
     const isCorrect = question.options[optionIndex] === question.answer;
 
-    // setResult çağırılıp
+    // setResult çağırılır
     setResults((prevResults) => [
       ...prevResults,
       {
@@ -106,3 +106,5 @@ function Quiz({ questions, onFinish }) {
 }
 
 export default Quiz;
+
+//
