@@ -1,0 +1,239 @@
+/* Genel sayfa ayarları */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+/* Sayfa içi container ayarları */
+.container {
+  width: 80%;
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(60deg, #ffffff, #414140);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Giriş bölümü(intro) ayarları */
+.intro {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(60deg, #414140, #ffffff);
+}
+
+/* Intro başlık ayarları */
+.intro h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  font-weight: 800;
+}
+
+/* Intro paragraf ayarları */
+.intro p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white; 
+}
+
+/* Intro button ayarları */
+.intro button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color:white;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(40, 51, 56, 0.644);
+  cursor: pointer;
+}
+
+/* Intro button hover ayarları */
+.intro button:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+/* Intro küöük yazı ayarları */
+.intro .dream {
+  background-color: goldenrod;
+  color: black;
+}
+
+#question-container {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(60deg, #ffffff, #414140);
+
+}
+
+/* Image ayarları */
+#question-container img {
+  max-width: 572px;
+  max-height: 300px;
+  width: 100%;
+  height: 50%;
+}
+
+/* Seçenek cevaplar bölümü ayarları */
+.option {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgba(40, 51, 56, 0.644);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Seçenek cevaplar bölümü hover ayarları */
+.option:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+
+.quiz {
+  position: relative;
+}
+
+/* Süre ayarları */
+.timer-border {
+  width: 100px;
+  height: 100px;
+  background-color: chartreuse;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  
+  /* Timer ve yuvarlağı ortalama */
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* geri sayım ayarları */
+.timer {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 20.saniyeden sonra oluşan ayarlar */
+.warn {
+  background-color: yellow;
+  color: black;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Sayı için spin özelliği */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 10.saniyeden sonra oluşan ayarlar */
+.warning {
+  background-color: red;
+  color: white;
+  font-size: 2.5em;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: -20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+} 
+
+/* Sonuç bölümü */
+.result {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+}
+
+.result ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result li {
+  margin: 5px 0;
+}
+
+.result-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.div-result {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-cor {
+  background-color: rgb(0, 255, 0);
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 4px;
+  opacity: 0.6;
+
+}
+
+.div-wro {
+  background-color: rgb(255, 0, 0);
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 4px;
+  opacity: 0.6;
+}
